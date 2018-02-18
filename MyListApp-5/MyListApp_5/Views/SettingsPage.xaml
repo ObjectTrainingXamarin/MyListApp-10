@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyListApp_5.SettingsPage"
+             Title="SettingsPage">
+  
+        <ScrollView>
+            <StackLayout>
+                <!-- Add controls  -->
+            <ActivityIndicator x:Name="indicator"
+			    IsVisible="false"
+			    IsRunning="false"/>
+
+            <Label Text="Please enter your credentials."
+           	    Font="Medium"
+			    TextColor = "Blue"
+           	    HorizontalOptions="Center"
+           	    VerticalOptions="CenterAndExpand"/>
+
+            <Entry 	x:Name="firstNameEntry"
+			    Placeholder="First Name" 
+			    HorizontalOptions="Center"
+			    WidthRequest = "250"/>
+
+            <Entry 	x:Name="surnameNameEntry"
+			    Placeholder="Surname" 
+			    HorizontalOptions="Center"
+			    WidthRequest = "250"/>
+
+            <Entry 	x:Name="userNameEntry"
+			    Placeholder="User Name" 
+			    HorizontalOptions="Center"
+			    WidthRequest = "250"/>
+
+            <Entry  x:Name="passwordEntry"
+			    Placeholder="Password" 
+			    HorizontalOptions="Center"
+			    WidthRequest = "250"
+			    IsPassword="true"/>
+
+             <Entry  x:Name="serverURLEntry"
+			    Placeholder="Server URL" 
+			    HorizontalOptions="Center"
+			    WidthRequest = "250"
+			    Keyboard ="Url"/>
+
+            <Button Text="Save"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" 
+			    WidthRequest="250"
+			    BackgroundColor="#1275bb"
+			    TextColor="White"	
+			    FontAttributes="Bold"
+			    Clicked="SaveButton_Clicked"/>
+
+            <Label  x:Name="statusLabel"
+           	    Font="Medium"
+			    TextColor = "Blue"
+           	    HorizontalOptions="Center"/>
+
+        </StackLayout>
+        </ScrollView>
+
+    </ContentPage>		
